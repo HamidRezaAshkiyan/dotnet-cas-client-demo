@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Security;
-using System.Web.SessionState;
+using System.Net;
 using System.Web.Routing;
 
 namespace dotnet_cas_client_demo
@@ -13,6 +9,7 @@ namespace dotnet_cas_client_demo
 
         protected void Application_Start(object sender, EventArgs e)
         {
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             RegisterRoutes(RouteTable.Routes);
         }
 
