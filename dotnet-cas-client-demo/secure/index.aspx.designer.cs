@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace dotnet_cas_client_demo.secure {
-    
-    
-    public partial class index {
-        
+namespace dotnet_cas_client_demo.secure
+{
+
+
+    public partial class index
+    {
+
         /// <summary>
         /// username control.
         /// </summary>
@@ -20,5 +22,23 @@ namespace dotnet_cas_client_demo.secure {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl username;
+
+        /// <summary>
+        /// attributes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl attributes;
+
+        /// <summary>
+        /// attribute control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl attribute;
     }
 }

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+﻿using DotNetCasClient;
+using System;
 
 namespace dotnet_cas_client_demo.secure
 {
@@ -13,6 +9,20 @@ namespace dotnet_cas_client_demo.secure
         {
             // get the current authenticated user
             username.InnerText = System.Web.HttpContext.Current.User.Identity.Name;
+
+            attributes.InnerText = CasAuthentication.CurrentPrincipal.Assertion.Attributes.Count.ToString();
+
+
+            /*var casAuthenticationTicket =
+                new CasAuthenticationTicket(
+                    "",
+                    "https://gate.uk.ac.ir",
+                    "http://my.uk.ac.ir",
+                    new Assertion(User.Identity.Name));
+
+            casAuthenticationTicket.Assertion.Attributes.Keys.GetEnumerator();
+
+            CasAuthentication.CurrentPrincipal.Assertion.Attributes;*/
         }
     }
 }
